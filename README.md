@@ -1,7 +1,7 @@
 ## Weather Analysis
-- blah
-- blah
-- blah
+- From the City Latitude vs Temperature graph, we can see that near the equator at latitude 0 degrees, the max temperature is higher than those nearer to the north (90 degrees) and towards the south (-90 degrees). 
+- From the City Latitude vs Humidity graph, we can see that the cities are more concentrated (50-100) around the equator (0 degrees), meaning that those cities are more likely to be humid. Whereas going away from the equator, the humidity is more varied (0-100).
+- From the City Latitude vs Wind Speed graph, we can see that most cities around the equator (0 degrees) have lower wind speeds, about 0-15 mph, and cities toward the north, especially between 40-60 degrees latitude, have higher wind speeds. 
 
 ```python
 # Import Dependencies
@@ -1642,7 +1642,7 @@ plt.ylim(-5, 40)
 
 # Set title and labels
 plt.xlabel("Latitude")
-plt.ylabel("Max Temperature (F)")
+plt.ylabel("Wind Speed")
 plt.title(f"City Latitude vs. Wind Speed ({date})")
 
 # Save figure
