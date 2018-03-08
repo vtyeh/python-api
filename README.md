@@ -19,7 +19,7 @@ sns.set(style="darkgrid")
 import datetime
 
 # openweathermap api key
-api_key = "d28b18768a2e31c92865084cffaea297"
+from config import api_key
 ```
 
 ## Generate Cities List
