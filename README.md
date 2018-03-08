@@ -1,4 +1,7 @@
-
+## Analysis
+- blah
+- blah
+- blah
 
 ```python
 # Import Dependencies
@@ -19,7 +22,7 @@ import datetime
 api_key = "d28b18768a2e31c92865084cffaea297"
 ```
 
-
+## Generate Cities List
 ```python
 # Get random numbers for latitude and longitude
 # Get numbers from size of 5000 to account for dropping duplicates and N/A cities on openweathermap
@@ -44,7 +47,7 @@ for city in cities:
     city_name.append(city.city_name)
 ```
 
-
+## Make a Cities Weather Data Frame 
 ```python
 # Make a summary dataframe for cities
 cities_df = pd.DataFrame({"Country": country_code,
@@ -63,7 +66,7 @@ cities_df['Max Temp'] = ''
 cities_df['Wind Speed'] = ''
 ```
 
-
+## Perform API Calls
 ```python
 # Set parameters for query url 
 params = {"appid": api_key, "units": "Imperial"}
@@ -1541,7 +1544,7 @@ cities_df.head()
 
 
 
-
+## Latitude vs Temperature Plot
 ```python
 # Get date for whenever the api is run, preferrably in the same day as making the graph
 now = datetime.datetime.now()
@@ -1572,7 +1575,7 @@ plt.show()
 ![png](WeatherPy_files/WeatherPy_6_0.png)
 
 
-
+## Latitude vs Humidity Plot
 ```python
 # Make scatter plot comparing latitude and humidity
 x1 = cities_df['Lat']
@@ -1599,7 +1602,7 @@ plt.show()
 ![png](WeatherPy_files/WeatherPy_7_0.png)
 
 
-
+## Latitude vs Cloudiness Plot
 ```python
 # Make scatter plot comparing latitude and cloudiness
 x2 = cities_df['Lat']
@@ -1626,7 +1629,7 @@ plt.show()
 ![png](WeatherPy_files/WeatherPy_8_0.png)
 
 
-
+## Latitude vs Wind Speed Plot
 ```python
 # Make scatter plot comparing latitude and wind speed
 x3 = cities_df['Lat']
